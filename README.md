@@ -2,16 +2,16 @@
 A Google Sheets script used to generate brevet cards from a spreadsheet of registered user information
 
 Many assumptions are currently made:
-1) Document in which this script will be run has a sheet called Submissions, which contains the rider-specific information
-2) Document in which this script will be run has a sheet called Controles, in a specific format, which contains route-specific information
-   - Should have 4 columns (Controle Name, Controle Address, Controle Times, Controle Distance)
-   - Should have 11 rows. First is header, 11th has "Bike Inspection" in the first (Controle Name) columns
-   - Controle Times values should be in the format "open: 03/08 10:19 close: 03/08 12:00"
-   - Controle Distance values should be in the format "Mile 28"
-3) Template files for the inside and outside of the brevet card exist, and are correctly specified by id in the top of the script.
-4) We wish to generate one blank card for every registered rider.
-5) We won't have more than 9 controles
-6) We'll print all the fronts first, then manually flip the papers and print all of the backs.
+- Document in which this script will be run has a sheet called Submissions, which contains the rider-specific information
+- Document in which this script will be run has a sheet called Controles, in a specific format, which contains route-specific information
+-- Should have 4 columns (Controle Name, Controle Address, Controle Times, Controle Distance)
+-- Should have 11 rows. First is header, 11th has "Bike Inspection" in the first (Controle Name) columns
+-- Controle Times values should be in the format "open: 03/08 10:19 close: 03/08 12:00"
+-- Controle Distance values should be in the format "Mile 28"
+- Template files for the inside and outside of the brevet card exist, and are correctly specified by id in the top of the script.
+- We wish to generate one blank card for every registered rider.
+- We won't have more than 9 controles
+- We'll print all the fronts first, then manually flip the papers and print all of the backs.
 
 Missing features: 
  - Generation of the backs of the cards is hard-coded to 16 cards.
